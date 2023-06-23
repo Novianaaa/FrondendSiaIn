@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import dbReduser from "../features/dbSlice";
+
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    db:dbReduser
   },
 });
